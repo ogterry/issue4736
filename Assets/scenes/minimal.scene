@@ -1,0 +1,119 @@
+{
+  "__guid": "83e2efeb-5796-4b8a-968c-2182193b621d",
+  "GameObjects": [
+    {
+      "__guid": "3ab450a2-d8ad-46b6-baac-5c364132429e",
+      "Flags": 0,
+      "Name": "Main Camera",
+      "Position": "95.70627,127.9996,119.5204",
+      "Rotation": "0,0,-0.8660254,0.5000001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "8d80bc3c-f6c5-49cc-b029-d7d5799b653d",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 95.7,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "82d45c2b-7caf-433c-b72c-fb67a6c50e3f",
+      "Flags": 0,
+      "Name": "Fridge",
+      "Position": "15.76043,-5.949219,77.81761",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "ec21e84e-0a8f-4777-8a4e-e8835d6f9419",
+          "BodyGroups": 18446744073709551615,
+          "CreateBoneObjects": false,
+          "Model": "models/fridge/models/equipment_fridge_02.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "0bbcca8d-98b2-40e9-a987-d1d738fb7e9d",
+          "IsTrigger": false,
+          "Model": "models/fridge/models/equipment_fridge_02.vmdl",
+          "Static": false
+        },
+        {
+          "__type": "FridgeComponent",
+          "__guid": "23991706-1018-46fa-a242-d76f88244921",
+          "Fridge": {
+            "_type": "gameobject",
+            "go": "82d45c2b-7caf-433c-b72c-fb67a6c50e3f"
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "f02e76a4-e873-4bbc-9f56-b01ac6ca0609",
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "250.3129,105.1884,233.9031",
+      "Rotation": "-0.3966766,0.6870642,-0.3043807,0.527203",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "b39db897-665b-4963-a564-645ff0330d55",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "minimal",
+  "Description": "",
+  "LastSaved": "2024-06-18T22:13:16.2327332\u002B02:00",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

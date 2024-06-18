@@ -1,0 +1,20 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "equipment_fridge_01",
+      "Type": "model",
+      "Org": "anatoliy",
+      "Ident": "equipment_fridge_01",
+      "Tags": null,
+      "Schema": 0,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "models/equipment/kitchen/equipment_fridge_01/models/equipment_fridge_01.vmdl"
+      }
+    }
+  }
+}
